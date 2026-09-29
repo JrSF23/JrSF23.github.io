@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salvador Nsue Ekang | Desarrollador Web Full Stack</title>
+  <meta name="description" content="Portafolio de Salvador Filiberto Nsue Ekang Esaha, desarrollador web Full Stack (React, Laravel, Python) y estudiante de Ciberseguridad y Gobernanza de Sistemas de Información.">
+  <meta property="og:title" content="Salvador Nsue Ekang | Desarrollador Web Full Stack">
+  <meta property="og:description" content="Desarrollador web Full Stack y estudiante de Ciberseguridad. React, Laravel, Python, SQL y MongoDB.">
+  <meta property="og:image" content="Images/fotodeportada.jpeg">
+  <meta name="theme-color" content="#07111f">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2307111f'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='%2338bdf8' font-family='Arial' font-weight='bold'>SE</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo">Salvador<span>.</span></a>
+      <nav>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="#contacto" class="btn btn--outline nav__cta">Contáctame</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__content">
+      <div class="hero__photo">
+        <img src="Images/fotodeportada.jpeg" alt="Foto de Salvador Nsue Ekang">
+      </div>
+      <p class="hero__hello">Hola, soy</p>
+      <h1 class="hero__name">Salvador Nsue Ekang</h1>
+      <p class="hero__role"><span id="typed"></span><span class="cursor">|</span></p>
+      <div class="hero__social">
+        <a href="https://github.com/JrSF23" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Salvador%20Filiberto%20Nsue%20Ekang%20Esaha" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://wa.me/212709184686" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:salvadorfiliberto6@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="hero__buttons">
+        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+        <a href="cv_with_photo.pdf" download="CV_Salvador_Nsue_Ekang.pdf" class="btn btn--outline">Descargar CV</a>
+      </div>
+    </div>
+    <a href="#sobre-mi" class="hero__scroll"><span></span>Desliza</a>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <span class="section__num">01</span>
+      <div class="about">
+        <div class="about__img reveal">
+          <img src="Images/fotodesobremi.jpeg" alt="Salvador Nsue Ekang" loading="lazy">
+        </div>
+        <div class="about__text reveal">
+          <p class="section__kicker">Descúbreme</p>
+          <h2 class="section__title">Sobre mí</h2>
+          <p>
+            Soy <strong>Salvador Filiberto Nsue Ekang Esaha</strong>, desarrollador web <strong>Full Stack</strong>
+            formado en Desarrollo Digital en el ISTA Salé Al Jadida y actualmente estudiante de
+            <strong>Ciberseguridad y Gobernanza de Sistemas de Información</strong>.
+          </p>
+          <p>
+            Me definen la responsabilidad y un fuerte compromiso con el trabajo, tanto de forma autónoma como en equipo.
+            Convierto mi pasión por la tecnología en un servicio: construir soluciones útiles, bien hechas y honestas.
+            Mi principio de trabajo es sencillo: <em>aprender de todo y de todos</em>.
+          </p>
+          <ul class="about__info">
+            <li><span>Nombre:</span> Salvador Nsue Ekang</li>
+            <li><span>Ubicación:</span> Salé, Marruecos</li>
+            <li><span>Email:</span> salvadorfiliberto6@gmail.com</li>
+            <li><span>WhatsApp:</span> +212 709 184 686</li>
+            <li><span>Idiomas:</span> Español (nativo), Francés (B2), Inglés (intermedio)</li>
+            <li><span>Disponibilidad:</span> Prácticas remuneradas y media jornada</li>
+          </ul>
+          <a href="cv_with_photo.pdf" download="CV_Salvador_Nsue_Ekang.pdf" class="btn btn--primary"><i class="fa-solid fa-download"></i> Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section section--alt" id="servicios">
+    <div class="container">
+      <span class="section__num">02</span>
+      <p class="section__kicker">Qué hago</p>
+      <h2 class="section__title">Mis servicios</h2>
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <i class="fa-solid fa-layer-group card__icon"></i>
+          <h3>Desarrollo Full Stack</h3>
+          <p>Aplicaciones web completas con React en el frontend y Laravel en el backend, de la idea al despliegue.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-server card__icon"></i>
+          <h3>Backend y APIs</h3>
+          <p>APIs REST seguras con PHP/Laravel y Python: autenticación, roles, control de acceso y lógica de negocio.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-display card__icon"></i>
+          <h3>Interfaces web</h3>
+          <p>Interfaces modernas, responsive y accesibles con HTML, CSS, JavaScript y React.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-database card__icon"></i>
+          <h3>Bases de datos</h3>
+          <p>Modelado y gestión de datos en SQL (MySQL) y NoSQL (MongoDB), orientado a rendimiento e integridad.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-shield-halved card__icon"></i>
+          <h3>Seguridad y gobernanza</h3>
+          <p>Buenas prácticas de ciberseguridad y gobernanza de SI aplicadas al desarrollo: aislamiento de datos y mínimo privilegio.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-diagram-project card__icon"></i>
+          <h3>Análisis y gestión ágil</h3>
+          <p>Análisis y diseño con UML, trabajo con metodología Scrum y análisis de datos con Excel avanzado.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section class="section" id="habilidades">
+    <div class="container">
+      <span class="section__num">03</span>
+      <p class="section__kicker">Lo que domino</p>
+      <h2 class="section__title">Habilidades</h2>
+      <div class="skills">
+        <div class="skills__intro reveal">
+          <h3>Tecnologías con las que construyo cada día</h3>
+          <p>Trabajo en todo el stack: desde la interfaz hasta la base de datos, aplicando buenas prácticas de seguridad y una metodología de trabajo ordenada.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
+            <span>React Native</span><span>PHP</span><span>Laravel</span><span>Python</span><span>MySQL</span>
+            <span>MongoDB</span><span>Docker</span><span>Git</span><span>UML</span><span>Scrum</span><span>Excel</span>
+          </div>
+        </div>
+        <div class="skills__bars reveal">
+          <div class="bar" data-level="90"><div class="bar__head"><span>HTML</span><span class="bar__val">Avanzado</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="70"><div class="bar__head"><span>CSS</span><span class="bar__val">Intermedio</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="88"><div class="bar__head"><span>JavaScript</span><span class="bar__val">Avanzado</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="88"><div class="bar__head"><span>React</span><span class="bar__val">Avanzado</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="88"><div class="bar__head"><span>PHP · Laravel</span><span class="bar__val">Avanzado</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="85"><div class="bar__head"><span>Python</span><span class="bar__val">Avanzado</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="85"><div class="bar__head"><span>SQL · NoSQL (MongoDB)</span><span class="bar__val">Avanzado</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="85"><div class="bar__head"><span>UML · Scrum</span><span class="bar__val">Avanzado</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="85"><div class="bar__head"><span>Excel</span><span class="bar__val">Avanzado</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section class="section section--alt" id="proyectos">
+    <div class="container">
+      <span class="section__num">04</span>
+      <p class="section__kicker">Mi trabajo</p>
+      <h2 class="section__title">Proyectos destacados</h2>
+      <div class="grid grid--3">
+        <article class="project reveal">
+          <div class="project__top"><i class="fa-solid fa-school"></i><span class="project__badge">Proyecto final</span></div>
+          <h3>SmartWork · Refuerzo Élite</h3>
+          <p>Sistema multi-organización para centros de apoyo escolar: alumnos, tutores, profesores, grupos, sesiones, asistencia y pagos. Datos totalmente aislados por centro y control de acceso por roles.</p>
+          <div class="project__tech"><span>Laravel</span><span>PHP</span><span>JavaScript</span><span>Docker</span></div>
+          <div class="project__links">
+            <a href="https://github.com/JrSF23/Refuerzo_Elite_app_PFF" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="project__top"><i class="fa-solid fa-globe"></i><span class="project__badge">En producción</span></div>
+          <h3>Refuerzo Élite · Web</h3>
+          <p>Plataforma para un centro de refuerzo escolar con web informativa e interfaz de administración para gestionar y modificar sus datos de forma sencilla y moderna.</p>
+          <div class="project__tech"><span>PHP</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          <div class="project__links">
+            <a href="https://refuerzoelite.site" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Web</a>
+            <a href="https://github.com/JrSF23/RefuerzoEliteversion1" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="project__top"><i class="fa-solid fa-money-bill-transfer"></i><span class="project__badge">App móvil</span></div>
+          <h3>Rate X</h3>
+          <p>Conversor de divisas rápido y minimalista (MAD, EUR, USD, GBP, XAF) con tasas en tiempo real, modo sin conexión y modo oscuro automático.</p>
+          <div class="project__tech"><span>React Native</span><span>Expo</span><span>TypeScript</span><span>Zustand</span></div>
+          <div class="project__links">
+            <a href="https://github.com/JrSF23/Rate-X" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="project__top"><i class="fa-solid fa-chart-line"></i><span class="project__badge">Investigación</span></div>
+          <h3>Monolito vs Microservicios</h3>
+          <p>Dos versiones de un e-commerce (monolítica y en microservicios) comparadas con pruebas de carga: latencia p95, peticiones/s, CPU/RAM y tasa de errores.</p>
+          <div class="project__tech"><span>React</span><span>Laravel</span><span>MongoDB</span><span>Docker</span><span>JMeter</span></div>
+          <div class="project__links">
+            <a href="https://github.com/JrSF23/tfg-monolith-vs-microservices" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="project__top"><i class="fa-solid fa-file-contract"></i><span class="project__badge">App móvil</span></div>
+          <h3>SDocs</h3>
+          <p>Aplicación móvil interna que centraliza la gestión de clientes, préstamos, contratos y pagos, automatizando la generación de documentos y el seguimiento de vencimientos.</p>
+          <div class="project__tech"><span>Móvil</span><span>Automatización</span></div>
+          <div class="project__links">
+            <a href="https://github.com/JrSF23/SDocs" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="project__top"><i class="fa-solid fa-list-check"></i><span class="project__badge">Web</span></div>
+          <h3>Gestor de Tareas</h3>
+          <p>Aplicación para organizar las tareas diarias: crear, completar y eliminar tareas de forma rápida y clara.</p>
+          <div class="project__tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+          <div class="project__links">
+            <a href="https://github.com/JrSF23/To-do-List-TP" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+          </div>
+        </article>
+      </div>
+      <div class="center">
+        <a href="https://github.com/JrSF23" target="_blank" rel="noopener" class="btn btn--outline"><i class="fa-brands fa-github"></i> Ver todo en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAYECTORIA ===== -->
+  <section class="section" id="trayectoria">
+    <div class="container">
+      <span class="section__num">05</span>
+      <p class="section__kicker">Mi camino</p>
+      <h2 class="section__title">Educación y experiencia</h2>
+      <div class="resume">
+        <div class="reveal">
+          <h3 class="resume__head"><i class="fa-solid fa-graduation-cap"></i> Educación</h3>
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__date">En curso</span>
+              <h4>Ciberseguridad y Gobernanza de Sistemas de Información</h4>
+              <p>Estudios en seguridad de la información, gestión de riesgos y gobernanza de SI.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2024 – 2026</span>
+              <h4>Desarrollo Digital Full Stack</h4>
+              <p class="timeline__place">ISTA Salé Al Jadida</p>
+              <p>Desarrollo web frontend y backend, bases de datos, UML y metodologías ágiles.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2023 – 2024</span>
+              <h4>Diploma de Francés B2</h4>
+              <p class="timeline__place">Universidad Mohammed V</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2022 – 2023</span>
+              <h4>Ciencias Económicas</h4>
+              <p class="timeline__place">Universidad Nacional de Guinea Ecuatorial</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="resume__head"><i class="fa-solid fa-briefcase"></i> Experiencia</h3>
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__date">Oct. 2025 – Dic. 2025</span>
+              <h4>Profesor de apoyo de español</h4>
+              <p class="timeline__place">SuperProf</p>
+              <p>Clases personalizadas para alumnos de todos los niveles y creación de material didáctico digital: fichas, ejercicios interactivos, audios y mini-tests.</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">May. 2025 – Ago. 2025</span>
+              <h4>Proyecto web · Refuerzo Élite</h4>
+              <p class="timeline__place">refuerzoelite.site</p>
+              <p>Desarrollo de una plataforma web con página informativa e interfaz de administración para un centro de apoyo escolar (PHP, JavaScript, HTML, CSS).</p>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__date">2022 – 2023</span>
+              <h4>Formador en Informática</h4>
+              <p class="timeline__place">Seminarios en español · Guinea Ecuatorial</p>
+              <p>Formación a usuarios principiantes e intermedios en Word, Excel, PowerPoint, gestión de archivos, navegación web y seguridad digital básica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section section--alt" id="contacto">
+    <div class="container">
+      <span class="section__num">06</span>
+      <p class="section__kicker">Hablemos</p>
+      <h2 class="section__title">Contacto</h2>
+      <div class="contact">
+        <div class="contact__info reveal">
+          <p>¿Tienes una oferta de prácticas, un trabajo a media jornada o un proyecto en mente? Escríbeme y te respondo lo antes posible.</p>
+          <a class="contact__item" href="mailto:salvadorfiliberto6@gmail.com"><i class="fa-solid fa-envelope"></i><div><span>Email</span>salvadorfiliberto6@gmail.com</div></a>
+          <a class="contact__item" href="https://wa.me/212709184686" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><div><span>WhatsApp</span>+212 709 184 686</div></a>
+          <a class="contact__item" href="https://www.linkedin.com/search/results/all/?keywords=Salvador%20Filiberto%20Nsue%20Ekang%20Esaha" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i><div><span>LinkedIn</span>Salvador Filiberto Nsue Ekang Esaha</div></a>
+          <a class="contact__item" href="https://github.com/JrSF23" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><div><span>GitHub</span>JrSF23</div></a>
+        </div>
+        <form class="contact__form reveal" id="contactForm">
+          <div class="form__row">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Asunto" required>
+          <textarea name="message" rows="6" placeholder="Tu mensaje" required></textarea>
+          <div class="form__buttons">
+            <button type="submit" class="btn btn--primary" data-via="email"><i class="fa-solid fa-paper-plane"></i> Enviar por email</button>
+            <button type="submit" class="btn btn--outline" data-via="whatsapp"><i class="fa-brands fa-whatsapp"></i> Enviar por WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Salvador Filiberto Nsue Ekang Esaha · Desarrollador Web Full Stack</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
