@@ -103,6 +103,12 @@ const ES = {
   "projects.p6": "Aplicación para organizar las tareas diarias: crear, completar y eliminar tareas de forma rápida y clara.",
   "projects.note": '<i class="fa-solid fa-lock"></i> El código fuente de estos proyectos es privado. Para consultarlo o hacer un fork, pídeme autorización.',
   "projects.all": "Solicitar acceso al código",
+  ...Object.fromEntries(
+    ["SmartWork", "Refuerzo Élite", "Rate X", "Monolito vs Microservicios", "SDocs", "Gestor de Tareas"].map((n, i) => [
+      `mail.p${i + 1}`,
+      "mailto:salvadorfiliberto6@gmail.com?subject=" + encodeURIComponent(`Solicitud de acceso al código: ${n}`),
+    ])
+  ),
   "resume.kicker": "Mi camino",
   "resume.title": "Educación y experiencia",
   "resume.edu": "Educación",
@@ -153,6 +159,7 @@ const TITLE = {
 const FR = {};
 document.querySelectorAll("[data-i18n]").forEach((el) => (FR[el.dataset.i18n] = el.innerHTML));
 document.querySelectorAll("[data-i18n-ph]").forEach((el) => (FR[el.dataset.i18nPh] = el.placeholder));
+document.querySelectorAll("[data-i18n-href]").forEach((el) => (FR[el.dataset.i18nHref] = el.getAttribute("href")));
 
 let lang = "fr";
 
@@ -166,6 +173,10 @@ function setLang(next) {
   document.querySelectorAll("[data-i18n-ph]").forEach((el) => {
     const t = dict[el.dataset.i18nPh];
     if (t !== undefined) el.placeholder = t;
+  });
+  document.querySelectorAll("[data-i18n-href]").forEach((el) => {
+    const t = dict[el.dataset.i18nHref];
+    if (t !== undefined) el.setAttribute("href", t);
   });
   document.documentElement.lang = lang;
   document.title = TITLE[lang];
