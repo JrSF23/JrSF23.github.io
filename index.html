@@ -24,17 +24,23 @@
       <a href="#inicio" class="nav__logo">Salvador<span>.</span></a>
       <nav>
         <ul class="nav__links" id="navLinks">
-          <li><a href="#inicio" class="active">Accueil</a></li>
-          <li><a href="#sobre-mi">À propos</a></li>
-          <li><a href="#servicios">Services</a></li>
-          <li><a href="#habilidades">Compétences</a></li>
-          <li><a href="#proyectos">Projets</a></li>
-          <li><a href="#trayectoria">Parcours</a></li>
-          <li><a href="#contacto">Contact</a></li>
+          <li><a href="#inicio" class="active" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#sobre-mi" data-i18n="nav.about">À propos</a></li>
+          <li><a href="#servicios" data-i18n="nav.services">Services</a></li>
+          <li><a href="#habilidades" data-i18n="nav.skills">Compétences</a></li>
+          <li><a href="#proyectos" data-i18n="nav.projects">Projets</a></li>
+          <li><a href="#trayectoria" data-i18n="nav.resume">Parcours</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="#contacto" class="btn btn--outline nav__cta">Me contacter</a>
-      <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav__right">
+        <div class="lang" role="group" aria-label="Langue / Idioma">
+          <button type="button" class="lang__btn active" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang__btn" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a href="#contacto" class="btn btn--outline nav__cta" data-i18n="nav.cta">Me contacter</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
     </div>
   </header>
 
@@ -42,9 +48,9 @@
   <section class="hero" id="inicio">
     <div class="hero__content">
       <div class="hero__photo">
-        <img src="Images/fotodeportada.jpeg" alt="Photo de Salvador Nsue Ekang">
+        <img src="Images/fotodeportada.jpeg" alt="Salvador Nsue Ekang">
       </div>
-      <p class="hero__hello">Bonjour, je suis</p>
+      <p class="hero__hello" data-i18n="hero.hello">Bonjour, je suis</p>
       <h1 class="hero__name">Salvador Nsue Ekang</h1>
       <p class="hero__role"><span id="typed"></span><span class="cursor">|</span></p>
       <div class="hero__social">
@@ -54,11 +60,11 @@
         <a href="mailto:salvadorfiliberto6@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
       </div>
       <div class="hero__buttons">
-        <a href="#proyectos" class="btn btn--primary">Voir mes projets</a>
-        <a href="cv_with_photo.pdf" download="CV_Salvador_Nsue_Ekang.pdf" class="btn btn--outline">Télécharger mon CV</a>
+        <a href="#proyectos" class="btn btn--primary" data-i18n="hero.projects">Voir mes projets</a>
+        <a href="cv_with_photo.pdf" download="CV_Salvador_Nsue_Ekang.pdf" class="btn btn--outline" data-i18n="cv">Télécharger mon CV</a>
       </div>
     </div>
-    <a href="#sobre-mi" class="hero__scroll"><span></span>Défiler</a>
+    <a href="#sobre-mi" class="hero__scroll"><span></span><b data-i18n="hero.scroll">Défiler</b></a>
   </section>
 
   <!-- ===== À PROPOS ===== -->
@@ -70,27 +76,27 @@
           <img src="Images/fotodesobremi.jpeg" alt="Salvador Nsue Ekang" loading="lazy">
         </div>
         <div class="about__text reveal">
-          <p class="section__kicker">Découvrez-moi</p>
-          <h2 class="section__title">À propos de moi</h2>
-          <p>
+          <p class="section__kicker" data-i18n="about.kicker">Découvrez-moi</p>
+          <h2 class="section__title" data-i18n="about.title">À propos de moi</h2>
+          <p data-i18n="about.p1">
             Je suis <strong>Salvador Filiberto Nsue Ekang Esaha</strong>, développeur web <strong>Full Stack</strong>
             formé en Développement Digital à l'ISTA Salé Al Jadida et actuellement étudiant en
             <strong>Cybersécurité et Gouvernance des Systèmes d'Information</strong>.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Je me distingue par mon sens des responsabilités et un fort engagement dans le travail, aussi bien en autonomie qu'en équipe.
             Je transforme ma passion pour la technologie en service : concevoir des solutions utiles, soignées et honnêtes.
             Mon principe de travail est simple : <em>apprendre de tout et de tous</em>.
           </p>
           <ul class="about__info">
-            <li><span>Nom :</span> Salvador Nsue Ekang</li>
-            <li><span>Localisation :</span> Salé, Maroc</li>
-            <li><span>E-mail :</span> salvadorfiliberto6@gmail.com</li>
-            <li><span>WhatsApp :</span> +212 709 184 686</li>
-            <li><span>Langues :</span> Espagnol (natif), Français (B2), Anglais (intermédiaire)</li>
-            <li><span>Disponibilité :</span> Stage rémunéré et temps partiel</li>
+            <li><span data-i18n="about.name">Nom :</span> Salvador Nsue Ekang</li>
+            <li><span data-i18n="about.location">Localisation :</span> <b data-i18n="about.locationVal">Salé, Maroc</b></li>
+            <li><span data-i18n="about.email">E-mail :</span> salvadorfiliberto6@gmail.com</li>
+            <li><span data-i18n="about.whatsapp">WhatsApp :</span> +212 709 184 686</li>
+            <li><span data-i18n="about.languages">Langues :</span> <b data-i18n="about.languagesVal">Espagnol (natif), Français (B2), Anglais (intermédiaire)</b></li>
+            <li><span data-i18n="about.availability">Disponibilité :</span> <b data-i18n="about.availabilityVal">Stage rémunéré et temps partiel</b></li>
           </ul>
-          <a href="cv_with_photo.pdf" download="CV_Salvador_Nsue_Ekang.pdf" class="btn btn--primary"><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
+          <a href="cv_with_photo.pdf" download="CV_Salvador_Nsue_Ekang.pdf" class="btn btn--primary"><i class="fa-solid fa-download"></i> <b data-i18n="cv">Télécharger mon CV</b></a>
         </div>
       </div>
     </div>
@@ -100,38 +106,38 @@
   <section class="section section--alt" id="servicios">
     <div class="container">
       <span class="section__num">02</span>
-      <p class="section__kicker">Ce que je fais</p>
-      <h2 class="section__title">Mes services</h2>
+      <p class="section__kicker" data-i18n="services.kicker">Ce que je fais</p>
+      <h2 class="section__title" data-i18n="services.title">Mes services</h2>
       <div class="grid grid--3">
         <article class="card reveal">
           <i class="fa-solid fa-layer-group card__icon"></i>
-          <h3>Développement Full Stack</h3>
-          <p>Applications web complètes avec React côté frontend et Laravel côté backend, de l'idée au déploiement.</p>
+          <h3 data-i18n="services.s1.t">Développement Full Stack</h3>
+          <p data-i18n="services.s1.d">Applications web complètes avec React côté frontend et Laravel côté backend, de l'idée au déploiement.</p>
         </article>
         <article class="card reveal">
           <i class="fa-solid fa-server card__icon"></i>
-          <h3>Backend et API</h3>
-          <p>API REST sécurisées avec PHP/Laravel et Python : authentification, rôles, contrôle d'accès et logique métier.</p>
+          <h3 data-i18n="services.s2.t">Backend et API</h3>
+          <p data-i18n="services.s2.d">API REST sécurisées avec PHP/Laravel et Python : authentification, rôles, contrôle d'accès et logique métier.</p>
         </article>
         <article class="card reveal">
           <i class="fa-solid fa-display card__icon"></i>
-          <h3>Interfaces web</h3>
-          <p>Interfaces modernes, responsives et accessibles avec HTML, CSS, JavaScript et React.</p>
+          <h3 data-i18n="services.s3.t">Interfaces web</h3>
+          <p data-i18n="services.s3.d">Interfaces modernes, responsives et accessibles avec HTML, CSS, JavaScript et React.</p>
         </article>
         <article class="card reveal">
           <i class="fa-solid fa-database card__icon"></i>
-          <h3>Bases de données</h3>
-          <p>Modélisation et gestion des données en SQL (MySQL) et NoSQL (MongoDB), axées sur la performance et l'intégrité.</p>
+          <h3 data-i18n="services.s4.t">Bases de données</h3>
+          <p data-i18n="services.s4.d">Modélisation et gestion des données en SQL (MySQL) et NoSQL (MongoDB), axées sur la performance et l'intégrité.</p>
         </article>
         <article class="card reveal">
           <i class="fa-solid fa-shield-halved card__icon"></i>
-          <h3>Sécurité et gouvernance</h3>
-          <p>Bonnes pratiques de cybersécurité et de gouvernance des SI appliquées au développement : isolation des données et moindre privilège.</p>
+          <h3 data-i18n="services.s5.t">Sécurité et gouvernance</h3>
+          <p data-i18n="services.s5.d">Bonnes pratiques de cybersécurité et de gouvernance des SI appliquées au développement : isolation des données et moindre privilège.</p>
         </article>
         <article class="card reveal">
           <i class="fa-solid fa-diagram-project card__icon"></i>
-          <h3>Analyse et gestion agile</h3>
-          <p>Analyse et conception avec UML, travail en méthode Scrum et analyse de données avec Excel avancé.</p>
+          <h3 data-i18n="services.s6.t">Analyse et gestion agile</h3>
+          <p data-i18n="services.s6.d">Analyse et conception avec UML, travail en méthode Scrum et analyse de données avec Excel avancé.</p>
         </article>
       </div>
     </div>
@@ -141,12 +147,12 @@
   <section class="section" id="habilidades">
     <div class="container">
       <span class="section__num">03</span>
-      <p class="section__kicker">Ce que je maîtrise</p>
-      <h2 class="section__title">Compétences</h2>
+      <p class="section__kicker" data-i18n="skills.kicker">Ce que je maîtrise</p>
+      <h2 class="section__title" data-i18n="skills.title">Compétences</h2>
       <div class="skills">
         <div class="skills__intro reveal">
-          <h3>Les technologies avec lesquelles je construis au quotidien</h3>
-          <p>J'interviens sur l'ensemble de la stack : de l'interface à la base de données, en appliquant les bonnes pratiques de sécurité et une méthode de travail rigoureuse.</p>
+          <h3 data-i18n="skills.h">Les technologies avec lesquelles je construis au quotidien</h3>
+          <p data-i18n="skills.p">J'interviens sur l'ensemble de la stack : de l'interface à la base de données, en appliquant les bonnes pratiques de sécurité et une méthode de travail rigoureuse.</p>
           <div class="tags">
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
             <span>React Native</span><span>PHP</span><span>Laravel</span><span>Python</span><span>MySQL</span>
@@ -154,15 +160,15 @@
           </div>
         </div>
         <div class="skills__bars reveal">
-          <div class="bar" data-level="90"><div class="bar__head"><span>HTML</span><span class="bar__val">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
-          <div class="bar" data-level="70"><div class="bar__head"><span>CSS</span><span class="bar__val">Intermédiaire</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
-          <div class="bar" data-level="88"><div class="bar__head"><span>JavaScript</span><span class="bar__val">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
-          <div class="bar" data-level="88"><div class="bar__head"><span>React</span><span class="bar__val">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
-          <div class="bar" data-level="88"><div class="bar__head"><span>PHP · Laravel</span><span class="bar__val">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
-          <div class="bar" data-level="85"><div class="bar__head"><span>Python</span><span class="bar__val">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
-          <div class="bar" data-level="85"><div class="bar__head"><span>SQL · NoSQL (MongoDB)</span><span class="bar__val">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
-          <div class="bar" data-level="85"><div class="bar__head"><span>UML · Scrum</span><span class="bar__val">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
-          <div class="bar" data-level="85"><div class="bar__head"><span>Excel</span><span class="bar__val">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="90"><div class="bar__head"><span>HTML</span><span class="bar__val" data-i18n="lvl.adv">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="70"><div class="bar__head"><span>CSS</span><span class="bar__val" data-i18n="lvl.mid">Intermédiaire</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="88"><div class="bar__head"><span>JavaScript</span><span class="bar__val" data-i18n="lvl.adv">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="88"><div class="bar__head"><span>React</span><span class="bar__val" data-i18n="lvl.adv">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="88"><div class="bar__head"><span>PHP · Laravel</span><span class="bar__val" data-i18n="lvl.adv">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="85"><div class="bar__head"><span>Python</span><span class="bar__val" data-i18n="lvl.adv">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="85"><div class="bar__head"><span>SQL · NoSQL (MongoDB)</span><span class="bar__val" data-i18n="lvl.adv">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="85"><div class="bar__head"><span>UML · Scrum</span><span class="bar__val" data-i18n="lvl.adv">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
+          <div class="bar" data-level="85"><div class="bar__head"><span>Excel</span><span class="bar__val" data-i18n="lvl.adv">Avancé</span></div><div class="bar__track"><div class="bar__fill"></div></div></div>
         </div>
       </div>
     </div>
@@ -172,67 +178,67 @@
   <section class="section section--alt" id="proyectos">
     <div class="container">
       <span class="section__num">04</span>
-      <p class="section__kicker">Mon travail</p>
-      <h2 class="section__title">Projets phares</h2>
+      <p class="section__kicker" data-i18n="projects.kicker">Mon travail</p>
+      <h2 class="section__title" data-i18n="projects.title">Projets phares</h2>
       <div class="grid grid--3">
         <article class="project reveal">
-          <div class="project__top"><i class="fa-solid fa-school"></i><span class="project__badge">Projet de fin de formation</span></div>
+          <div class="project__top"><i class="fa-solid fa-school"></i><span class="project__badge" data-i18n="badge.final">Projet de fin de formation</span></div>
           <h3>SmartWork · Refuerzo Élite</h3>
-          <p>Système multi-organisation pour centres de soutien scolaire : élèves, tuteurs, professeurs, groupes, séances, présences et paiements. Données totalement isolées par centre et contrôle d'accès par rôles.</p>
+          <p data-i18n="projects.p1">Système multi-organisation pour centres de soutien scolaire : élèves, tuteurs, professeurs, groupes, séances, présences et paiements. Données totalement isolées par centre et contrôle d'accès par rôles.</p>
           <div class="project__tech"><span>Laravel</span><span>PHP</span><span>JavaScript</span><span>Docker</span></div>
           <div class="project__links">
-            <a href="https://github.com/JrSF23/Refuerzo_Elite_app_PFF" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://github.com/JrSF23/Refuerzo_Elite_app_PFF" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> <b data-i18n="code">Code</b></a>
           </div>
         </article>
         <article class="project reveal">
-          <div class="project__top"><i class="fa-solid fa-globe"></i><span class="project__badge">En production</span></div>
-          <h3>Refuerzo Élite · Site web</h3>
-          <p>Plateforme pour un centre de soutien scolaire, composée d'un site vitrine et d'une interface d'administration permettant de gérer et modifier ses données de façon simple et moderne.</p>
+          <div class="project__top"><i class="fa-solid fa-globe"></i><span class="project__badge" data-i18n="badge.prod">En production</span></div>
+          <h3 data-i18n="projects.t2">Refuerzo Élite · Site web</h3>
+          <p data-i18n="projects.p2">Plateforme pour un centre de soutien scolaire, composée d'un site vitrine et d'une interface d'administration permettant de gérer et modifier ses données de façon simple et moderne.</p>
           <div class="project__tech"><span>PHP</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
           <div class="project__links">
-            <a href="https://refuerzoelite.site" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Site</a>
-            <a href="https://github.com/JrSF23/RefuerzoEliteversion1" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://refuerzoelite.site" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <b data-i18n="site">Site</b></a>
+            <a href="https://github.com/JrSF23/RefuerzoEliteversion1" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> <b data-i18n="code">Code</b></a>
           </div>
         </article>
         <article class="project reveal">
-          <div class="project__top"><i class="fa-solid fa-money-bill-transfer"></i><span class="project__badge">App mobile</span></div>
+          <div class="project__top"><i class="fa-solid fa-money-bill-transfer"></i><span class="project__badge" data-i18n="badge.mobile">App mobile</span></div>
           <h3>Rate X</h3>
-          <p>Convertisseur de devises rapide et minimaliste (MAD, EUR, USD, GBP, XAF) avec taux en temps réel, mode hors ligne et mode sombre automatique.</p>
+          <p data-i18n="projects.p3">Convertisseur de devises rapide et minimaliste (MAD, EUR, USD, GBP, XAF) avec taux en temps réel, mode hors ligne et mode sombre automatique.</p>
           <div class="project__tech"><span>React Native</span><span>Expo</span><span>TypeScript</span><span>Zustand</span></div>
           <div class="project__links">
-            <a href="https://github.com/JrSF23/Rate-X" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://github.com/JrSF23/Rate-X" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> <b data-i18n="code">Code</b></a>
           </div>
         </article>
         <article class="project reveal">
-          <div class="project__top"><i class="fa-solid fa-chart-line"></i><span class="project__badge">Recherche</span></div>
-          <h3>Monolithe vs Microservices</h3>
-          <p>Deux versions d'un site e-commerce (monolithique et microservices) comparées par des tests de charge : latence p95, requêtes/s, CPU/RAM et taux d'erreurs.</p>
+          <div class="project__top"><i class="fa-solid fa-chart-line"></i><span class="project__badge" data-i18n="badge.research">Recherche</span></div>
+          <h3 data-i18n="projects.t4">Monolithe vs Microservices</h3>
+          <p data-i18n="projects.p4">Deux versions d'un site e-commerce (monolithique et microservices) comparées par des tests de charge : latence p95, requêtes/s, CPU/RAM et taux d'erreurs.</p>
           <div class="project__tech"><span>React</span><span>Laravel</span><span>MongoDB</span><span>Docker</span><span>JMeter</span></div>
           <div class="project__links">
-            <a href="https://github.com/JrSF23/tfg-monolith-vs-microservices" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://github.com/JrSF23/tfg-monolith-vs-microservices" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> <b data-i18n="code">Code</b></a>
           </div>
         </article>
         <article class="project reveal">
-          <div class="project__top"><i class="fa-solid fa-file-contract"></i><span class="project__badge">App mobile</span></div>
+          <div class="project__top"><i class="fa-solid fa-file-contract"></i><span class="project__badge" data-i18n="badge.mobile">App mobile</span></div>
           <h3>SDocs</h3>
-          <p>Application mobile interne qui centralise la gestion des clients, prêts, contrats et paiements, en automatisant la génération de documents et le suivi des échéances.</p>
-          <div class="project__tech"><span>Mobile</span><span>Automatisation</span></div>
+          <p data-i18n="projects.p5">Application mobile interne qui centralise la gestion des clients, prêts, contrats et paiements, en automatisant la génération de documents et le suivi des échéances.</p>
+          <div class="project__tech"><span data-i18n="tech.mobile">Mobile</span><span data-i18n="tech.automation">Automatisation</span></div>
           <div class="project__links">
-            <a href="https://github.com/JrSF23/SDocs" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://github.com/JrSF23/SDocs" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> <b data-i18n="code">Code</b></a>
           </div>
         </article>
         <article class="project reveal">
           <div class="project__top"><i class="fa-solid fa-list-check"></i><span class="project__badge">Web</span></div>
-          <h3>Gestionnaire de tâches</h3>
-          <p>Application pour organiser ses tâches quotidiennes : créer, terminer et supprimer des tâches de manière rapide et claire.</p>
+          <h3 data-i18n="projects.t6">Gestionnaire de tâches</h3>
+          <p data-i18n="projects.p6">Application pour organiser ses tâches quotidiennes : créer, terminer et supprimer des tâches de manière rapide et claire.</p>
           <div class="project__tech"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
           <div class="project__links">
-            <a href="https://github.com/JrSF23/To-do-List-TP" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://github.com/JrSF23/To-do-List-TP" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> <b data-i18n="code">Code</b></a>
           </div>
         </article>
       </div>
       <div class="center">
-        <a href="https://github.com/JrSF23" target="_blank" rel="noopener" class="btn btn--outline"><i class="fa-brands fa-github"></i> Tout voir sur GitHub</a>
+        <a href="https://github.com/JrSF23" target="_blank" rel="noopener" class="btn btn--outline"><i class="fa-brands fa-github"></i> <b data-i18n="projects.all">Tout voir sur GitHub</b></a>
       </div>
     </div>
   </section>
@@ -241,56 +247,56 @@
   <section class="section" id="trayectoria">
     <div class="container">
       <span class="section__num">05</span>
-      <p class="section__kicker">Mon parcours</p>
-      <h2 class="section__title">Formation et expérience</h2>
+      <p class="section__kicker" data-i18n="resume.kicker">Mon parcours</p>
+      <h2 class="section__title" data-i18n="resume.title">Formation et expérience</h2>
       <div class="resume">
         <div class="reveal">
-          <h3 class="resume__head"><i class="fa-solid fa-graduation-cap"></i> Formation</h3>
+          <h3 class="resume__head"><i class="fa-solid fa-graduation-cap"></i> <b data-i18n="resume.edu">Formation</b></h3>
           <div class="timeline">
             <div class="timeline__item">
-              <span class="timeline__date">En cours</span>
-              <h4>Cybersécurité et Gouvernance des Systèmes d'Information</h4>
-              <p class="timeline__place">Université Ibn Tofail · École Supérieure de Technologie de Kénitra</p>
-              <p>Sécurité de l'information, gestion des risques et gouvernance des SI.</p>
+              <span class="timeline__date" data-i18n="resume.ongoing">En cours</span>
+              <h4 data-i18n="edu1.t">Cybersécurité et Gouvernance des Systèmes d'Information</h4>
+              <p class="timeline__place" data-i18n="edu1.place">Université Ibn Tofail · École Supérieure de Technologie de Kénitra</p>
+              <p data-i18n="edu1.d">Sécurité de l'information, gestion des risques et gouvernance des SI.</p>
             </div>
             <div class="timeline__item">
               <span class="timeline__date">2024 – 2026</span>
-              <h4>Développement Digital Full Stack</h4>
+              <h4 data-i18n="edu2.t">Développement Digital Full Stack</h4>
               <p class="timeline__place">ISTA Salé Al Jadida</p>
-              <p>Développement web frontend et backend, bases de données, UML et méthodes agiles.</p>
+              <p data-i18n="edu2.d">Développement web frontend et backend, bases de données, UML et méthodes agiles.</p>
             </div>
             <div class="timeline__item">
               <span class="timeline__date">2023 – 2024</span>
-              <h4>Diplôme de Français B2</h4>
-              <p class="timeline__place">Université Mohammed V</p>
+              <h4 data-i18n="edu3.t">Diplôme de Français B2</h4>
+              <p class="timeline__place" data-i18n="edu3.place">Université Mohammed V</p>
             </div>
             <div class="timeline__item">
               <span class="timeline__date">2022 – 2023</span>
-              <h4>Sciences Économiques</h4>
-              <p class="timeline__place">Université Nationale de Guinée Équatoriale</p>
+              <h4 data-i18n="edu4.t">Sciences Économiques</h4>
+              <p class="timeline__place" data-i18n="edu4.place">Université Nationale de Guinée Équatoriale</p>
             </div>
           </div>
         </div>
         <div class="reveal">
-          <h3 class="resume__head"><i class="fa-solid fa-briefcase"></i> Expérience</h3>
+          <h3 class="resume__head"><i class="fa-solid fa-briefcase"></i> <b data-i18n="resume.exp">Expérience</b></h3>
           <div class="timeline">
             <div class="timeline__item">
-              <span class="timeline__date">Oct. 2025 – Déc. 2025</span>
-              <h4>Professeur de soutien d'espagnol</h4>
+              <span class="timeline__date" data-i18n="exp1.date">Oct. 2025 – Déc. 2025</span>
+              <h4 data-i18n="exp1.t">Professeur de soutien d'espagnol</h4>
               <p class="timeline__place">SuperProf</p>
-              <p>Cours personnalisés pour des élèves de tous niveaux et création de supports pédagogiques numériques : fiches, exercices interactifs, audios et mini-tests.</p>
+              <p data-i18n="exp1.d">Cours personnalisés pour des élèves de tous niveaux et création de supports pédagogiques numériques : fiches, exercices interactifs, audios et mini-tests.</p>
             </div>
             <div class="timeline__item">
-              <span class="timeline__date">Mai 2025 – Août 2025</span>
-              <h4>Projet web · Refuerzo Élite</h4>
+              <span class="timeline__date" data-i18n="exp2.date">Mai 2025 – Août 2025</span>
+              <h4 data-i18n="exp2.t">Projet web · Refuerzo Élite</h4>
               <p class="timeline__place">refuerzoelite.site</p>
-              <p>Développement d'une plateforme web avec site vitrine et interface d'administration pour un centre de soutien scolaire (PHP, JavaScript, HTML, CSS).</p>
+              <p data-i18n="exp2.d">Développement d'une plateforme web avec site vitrine et interface d'administration pour un centre de soutien scolaire (PHP, JavaScript, HTML, CSS).</p>
             </div>
             <div class="timeline__item">
               <span class="timeline__date">2022 – 2023</span>
-              <h4>Formateur en informatique</h4>
-              <p class="timeline__place">Séminaires en espagnol · Guinée Équatoriale</p>
-              <p>Formation d'utilisateurs débutants et intermédiaires à Word, Excel, PowerPoint, la gestion de fichiers, la navigation web et les bases de la sécurité numérique.</p>
+              <h4 data-i18n="exp3.t">Formateur en informatique</h4>
+              <p class="timeline__place" data-i18n="exp3.place">Séminaires en espagnol · Guinée Équatoriale</p>
+              <p data-i18n="exp3.d">Formation d'utilisateurs débutants et intermédiaires à Word, Excel, PowerPoint, la gestion de fichiers, la navigation web et les bases de la sécurité numérique.</p>
             </div>
           </div>
         </div>
@@ -302,26 +308,26 @@
   <section class="section section--alt" id="contacto">
     <div class="container">
       <span class="section__num">06</span>
-      <p class="section__kicker">Parlons-en</p>
-      <h2 class="section__title">Contact</h2>
+      <p class="section__kicker" data-i18n="contact.kicker">Parlons-en</p>
+      <h2 class="section__title" data-i18n="contact.title">Contact</h2>
       <div class="contact">
         <div class="contact__info reveal">
-          <p>Vous avez une offre de stage, un poste à temps partiel ou un projet en tête ? Écrivez-moi, je vous répondrai dans les plus brefs délais.</p>
-          <a class="contact__item" href="mailto:salvadorfiliberto6@gmail.com"><i class="fa-solid fa-envelope"></i><div><span>E-mail</span>salvadorfiliberto6@gmail.com</div></a>
+          <p data-i18n="contact.p">Vous avez une offre de stage, un poste à temps partiel ou un projet en tête ? Écrivez-moi, je vous répondrai dans les plus brefs délais.</p>
+          <a class="contact__item" href="mailto:salvadorfiliberto6@gmail.com"><i class="fa-solid fa-envelope"></i><div><span data-i18n="contact.email">E-mail</span>salvadorfiliberto6@gmail.com</div></a>
           <a class="contact__item" href="https://wa.me/212709184686" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i><div><span>WhatsApp</span>+212 709 184 686</div></a>
           <a class="contact__item" href="https://www.linkedin.com/in/salvador-filiberto-nsue-ekang-esaha-33a68543b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i><div><span>LinkedIn</span>Salvador Filiberto Nsue Ekang Esaha</div></a>
           <a class="contact__item" href="https://github.com/JrSF23" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><div><span>GitHub</span>JrSF23</div></a>
         </div>
         <form class="contact__form reveal" id="contactForm">
           <div class="form__row">
-            <input type="text" name="name" placeholder="Votre nom" required>
-            <input type="email" name="email" placeholder="Votre e-mail" required>
+            <input type="text" name="name" placeholder="Votre nom" data-i18n-ph="form.name" required>
+            <input type="email" name="email" placeholder="Votre e-mail" data-i18n-ph="form.email" required>
           </div>
-          <input type="text" name="subject" placeholder="Objet" required>
-          <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
+          <input type="text" name="subject" placeholder="Objet" data-i18n-ph="form.subject" required>
+          <textarea name="message" rows="6" placeholder="Votre message" data-i18n-ph="form.message" required></textarea>
           <div class="form__buttons">
-            <button type="submit" class="btn btn--primary" data-via="email"><i class="fa-solid fa-paper-plane"></i> Envoyer par e-mail</button>
-            <button type="submit" class="btn btn--outline" data-via="whatsapp"><i class="fa-brands fa-whatsapp"></i> Envoyer par WhatsApp</button>
+            <button type="submit" class="btn btn--primary" data-via="email"><i class="fa-solid fa-paper-plane"></i> <b data-i18n="form.sendEmail">Envoyer par e-mail</b></button>
+            <button type="submit" class="btn btn--outline" data-via="whatsapp"><i class="fa-brands fa-whatsapp"></i> <b data-i18n="form.sendWa">Envoyer par WhatsApp</b></button>
           </div>
         </form>
       </div>
@@ -330,11 +336,11 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Salvador Filiberto Nsue Ekang Esaha · Développeur Web Full Stack</p>
+      <p>© <span id="year"></span> Salvador Filiberto Nsue Ekang Esaha · <b data-i18n="footer.role">Développeur Web Full Stack</b></p>
     </div>
   </footer>
 
-  <button class="to-top" id="toTop" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></button>
+  <button class="to-top" id="toTop" aria-label="↑"><i class="fa-solid fa-arrow-up"></i></button>
 
   <script src="JS/main.js"></script>
 </body>

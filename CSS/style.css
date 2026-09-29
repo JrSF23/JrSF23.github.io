@@ -62,6 +62,18 @@ ul { list-style: none; }
 }
 .nav__links a:hover, .nav__links a.active { color: var(--accent); }
 .nav__cta { padding: 8px 18px; }
+.nav__right { display: flex; align-items: center; gap: 14px; }
+b[data-i18n] { font-weight: inherit; }
+
+/* ===== Selector de idioma ===== */
+.lang { display: flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+.lang__btn {
+  background: transparent; border: none; cursor: pointer;
+  padding: 6px 10px; font-family: var(--font-head); font-weight: 700; font-size: .78rem;
+  color: var(--muted); transition: all .2s;
+}
+.lang__btn:hover { color: var(--accent); }
+.lang__btn.active { background: var(--accent); color: #04121f; }
 .nav__toggle { display: none; background: none; border: none; color: var(--heading); font-size: 1.4rem; cursor: pointer; }
 
 /* ===== Hero ===== */
