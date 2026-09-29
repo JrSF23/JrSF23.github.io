@@ -225,6 +225,8 @@ b[data-i18n] { font-weight: inherit; }
 .project__links { display: flex; gap: 18px; }
 .project__links a { font-weight: 600; font-size: .9rem; color: var(--accent); }
 .project__links a:hover { text-decoration: underline; }
+.projects__note { color: var(--muted); font-size: .92rem; margin-bottom: 18px; }
+.projects__note i { color: var(--accent); margin-right: 6px; }
 
 /* ===== Resume / Timeline ===== */
 .resume { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
