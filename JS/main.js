@@ -37,10 +37,10 @@ toTop.addEventListener("click", () => window.scrollTo({ top: 0 }));
 
 // ===== Efecto de escritura =====
 const roles = [
-  "Desarrollador Web Full Stack",
-  "Estudiante de Ciberseguridad",
+  "Développeur Web Full Stack",
+  "Étudiant en Cybersécurité",
   "React · Laravel · Python",
-  "Gobernanza de Sistemas de Información",
+  "Gouvernance des Systèmes d'Information",
 ];
 const typed = document.getElementById("typed");
 let roleIdx = 0, charIdx = 0, deleting = false;
@@ -80,7 +80,7 @@ form.querySelectorAll("button[data-via]").forEach((b) =>
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const d = Object.fromEntries(new FormData(form));
-  const body = `Hola Salvador,\n\n${d.message}\n\n— ${d.name} (${d.email})`;
+  const body = `Bonjour Salvador,\n\n${d.message}\n\n— ${d.name} (${d.email})`;
   if (via === "whatsapp") {
     window.open(`https://wa.me/212709184686?text=${encodeURIComponent(`*${d.subject}*\n\n${body}`)}`, "_blank");
   } else {
