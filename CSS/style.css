@@ -53,8 +53,15 @@ ul { list-style: none; }
   padding: 10px 0; box-shadow: 0 2px 20px rgba(0,0,0,.4);
 }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.nav__logo { font-family: var(--font-head); font-weight: 800; font-size: 1.5rem; color: var(--heading); }
-.nav__logo span { color: var(--accent); }
+.nav__logo {
+  width: 42px; height: 42px; border-radius: 10px;
+  display: grid; place-items: center; flex-shrink: 0;
+  font-size: 1.1rem; color: var(--accent);
+  border: 2px solid var(--accent); background: var(--accent-soft);
+  box-shadow: 0 0 16px rgba(56,189,248,.25);
+  transition: all .25s;
+}
+.nav__logo:hover { background: var(--accent); color: #04121f; }
 .nav__links { display: flex; gap: 26px; }
 .nav__links a {
   font-family: var(--font-head); font-weight: 600; font-size: .88rem;
